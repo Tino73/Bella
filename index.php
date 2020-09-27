@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<?php
+if(!isset($_SESSION))
+{	
+session_start();
+}
+?>
+<head>
+<title>BellaBella</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <h1><a href="index.php">Bella Bella </a></h1>
+    </div>
+    <div class="fl_right"><a class="btn" href="login/Login_v1/logout.php">Log out</a></div>
+  </header>
+</div>
+<div class="bgded" style="background-image:url('images/demo/backgrounds/garderoba.jpg');"> 
+  
+  <div class="wrapper row2">
+    <nav id="mainav" class="hoc clear"> 
+      
+      <ul class="clear">
+        <li class="active"><a href="index.php">Home</a></li>
+
+        <li><a class="drop" href="#">Pages</a>
+
+          <ul>
+           
+            <li><a href="aboutusUser.html">About us</a></li>
+            <li><a href="pages/aksesoretUser.html">Aksesoret</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Page 4</a></li>
+          </ul>
+        </li>
+         <li><a href="pages/galleryUser.html">Gallery</a></li>
+        </ul>
+    
+    </nav>
+  </div>
+
+  <div class="wrapper overlay">
+    <article id="pageintro" class="hoc clear"> 
+     
+      <h3 class="heading">Mirësevini  <?php echo $_SESSION['Name']; ?> </h3>
+      <p>Ketu mund te gjeni produktet me te reja te brendit tone </p>
+ 
+
+    </article>
+  </div>
+
+</div>
+<div class="wrapper bgded" style="background-image:url('images/demo/backgrounds/foto3.jpg');">
+  <div class="hoc split clear">
+    <section> 
+      <br>
+      <br>
+      <br>
+
+
+      <h2 class="heading">Produktet tjera</h2>
+      <p class="btmspace-50">Perveq prdukteve te tekstilit permbajm edhe aksesore <br>
+      <br></p>
+      <br>
+      
+
+
+    </section>
+  </div>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/foto2.jpg');">
+  <div class="hoc container testimonials clear"> 
+    <article><img src="images/demo/bobi.jpg" alt="">
+      <blockquote>Jom shum i lumtur me produktet e juaja kualiteti dhe sherbimi ne nivel.Faleminderit shume.</blockquote>
+      <h6 class="heading">Fatlum Muqolli </h6>
+   </article>
+  </div>
+</div>
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">Produktet</h6>
+      <p>Ne zbritje </p>
+    </div>
+    <div class="group latest">
+      <article class="one_third first">
+        <figure><a href="#"><img src="images/demo/lanti3.jpg" alt=""></a>
+          <figcaption>
+            <time datetime="2045-04-06T08:15+00:00"><strong>32</strong> <em>Euro</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Bella T-shirt</h4>
+         </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="#"><img src="images/demo/lanti2.jfif" alt=""></a>
+          <figcaption>
+            <time datetime="2045-04-05T08:15+00:00"><strong>75</strong> <em>Euro</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Bella dress</h4>
+         
+        </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="#"><img src="images/demo/lanti.jpg" alt=""></a>
+          <figcaption>
+            <time datetime="2045-04-04T08:15+00:00"><strong>21</strong> <em>euro</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Bella T-shirt</h4>
+          
+        </div>
+      </article>
+    </div>
+    <div class="clear"></div>
+  </section>
+</div>
+
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="heading">Na kontaktoni </h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+            Rr.Nena Tereza &amp;  Prishtine, 10000
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +383 49 111 222</li>
+        <li><i class="fa fa-envelope-o"></i> Bellabella@gmail.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.insider.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="https://mail.google.com"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    
+    <div class="one_third">
+      <h6 class="heading">Antarsohu tani</h6>
+      <p class="nospace btmspace-30">Fito zbritje ne te gjitha produktet</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved to Bella Bella</p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+</body>
+</html>

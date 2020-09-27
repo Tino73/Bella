@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<head>
+<title>BellaBella</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <h1><a href="indexAdmin.php">Bella Bella </a></h1>
+    </div>
+    <div class="fl_right"><a class="btn" href="login/Login_v1/logout.php">Log out</a></div>
+  </header>
+</div>
+<div class="bgded" style="background-image:url('../images/demo/backgrounds/garderoba.jpg');"> 
+  
+  <div class="wrapper row2">
+    <nav id="mainav" class="hoc clear"> 
+      
+      <ul class="clear">
+        <li><a href="../indexAdmin.php">Home</a></li>
+
+        <li class="active"><a class="drop" href="#">Pages</a>
+
+          <ul>
+           
+            <li><a href="../aboutusAdmin.html">About us</a></li>
+            <li class="active"><a href="aksesoretAdmin.html">Aksesoret</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Page 4</a></li>
+          </ul>
+        </li>
+         <li><a href="galleryAdmin.html">Gallery</a></li>
+        </ul>
+    
+    </nav>
+  </div>
+
+  <div class="wrapper overlay">
+    <article id="pageintro" class="hoc clear"> 
+     
+      <h3 class="heading">Aksesoret</h3>
+      <p>Ketu mund te gjeni aksesoret qe i kemi ne dispozicion!</p>
+ 
+
+    </article>
+  </div>
+
+</div>
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <div class="group">
+      <div class="one_half first">
+        <p class="font-xs nospace">Rreth Aksesoreve tona:   </p>
+        <h6 class="heading">Bella's Accesories'</h6>
+        <p>Është një markë bashkëkohore e veshjeve dhe aksesoreve, 
+            e njohur për stilet e saj të drejtuara nga trendi me çmime të përballueshme. 
+            Duke tërhequr frymëzimin nga tendencat më të fundit, nga stili i rrugës në pistë, 
+            marka e veshjeve Bella Bella ofron një grup stilesh që janë të përshtatshme për vajzën e dashur për modë. 
+            Nga rrobat e punës në stilin e rrugës, natën jashtë, 
+            etiketa Rreth Nesh mund t'ju bëjë që të shkoni nga dita në natë. 
+            Bleni koleksionin e fundit nga linja e veshjeve Rreth Nesh, 
+            duke filluar nga veshjet deri në majë, trikotat e triko, rompers, 
+            pantallona dhe veshje të sipërme si dhe aksesoret nga brendet me te medha boterore.
+            Aksesoret qe ne i zotrojme perdoren nga artist dhe artiste mbare vendit.</p>
+        
+        <footer><a class="btn" href="#">Kliko per te pare me shume!!  &raquo;</a></footer>
+      </div>
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <img src="../images/rayban.jfif" style="width:100%">
+        <div class="text">Syze Rayban</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/earrings.jpg" style="width:100%">
+        <div class="text">Earrings</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/gucci.jfif" style="width:100%">
+        <div class="text">Qante krahu, Gucci</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="../images/loui.jfif" style="width:100%">
+        <div class="text">Syze Loui Vuitton</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="../images/syza.jfif" style="width:100%">
+        <div class="text">Syze Mace</div>
+      </div>
+      
+        
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+  </section>
+</div>
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="heading">Na kontaktoni </h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+            Rr.Nena Tereza &amp;  Prishtine, 10000
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +383 49 111 222</li>
+        <li><i class="fa fa-envelope-o"></i> Bellabella@gmail.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.insider.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="https://mail.google.com"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    
+    <div class="one_third">
+      <h6 class="heading">Antarsohu tani</h6>
+      <p class="nospace btmspace-30">Fito zbritje ne te gjitha produktet</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved to Bella Bella</p>
+  </div>
+</div>
+</body>
+</html>
